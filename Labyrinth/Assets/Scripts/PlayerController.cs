@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 4.0f;
-    public GameObject Theseus;
     private Vector2 direction = Vector2.zero;
 
 
@@ -53,14 +52,16 @@ public class PlayerController : MonoBehaviour
 
     void UpdateOrientation()
     {
+        SpriteRenderer SpriteRenderer = GetComponent<SpriteRenderer>();
+
         if (direction == Vector2.left)
         {
-            Theseus.transform.localScale = new Vector3(-1, 1, 1);
+            SpriteRenderer.flipX = true; 
         }
 
         else if (direction == Vector2.right)
         {
-            Theseus.transform.localScale = new Vector3(1, 1, 1);
+            SpriteRenderer.flipX = false;
         }
     }
 }

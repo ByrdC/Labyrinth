@@ -5,7 +5,7 @@ using TMPro;
 
 public class StoryController : MonoBehaviour
 {
-    public TextContainer StoryText;
+    public TextMeshProUGUI StoryText;
 
     public GameObject IntroCollider01;
     public GameObject IntroCollider02;
@@ -14,6 +14,7 @@ public class StoryController : MonoBehaviour
     public GameObject IntroCollider05;
     public GameObject IntroCollider06;
     public GameObject IntroCollider07;
+    public GameObject IntroCollider08;
 
 
     private string IntroText01 = "A red thread begins to unravel...";
@@ -27,16 +28,18 @@ public class StoryController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // StoryText.text = IntroText01;
+        StoryText = GetComponent<TextMeshProUGUI>();
+        StoryText.text = "Navigate the labyrinth using the W A S D keys.";
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        ChapterSelect();
     }
 
     void ChapterSelect()
     {
+        Debug.Log(":)");
     }
 }
