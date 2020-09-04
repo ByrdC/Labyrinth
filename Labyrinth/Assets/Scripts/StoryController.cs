@@ -27,7 +27,7 @@ public class StoryController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StoryText.text = IntroText01;
+       // StoryText.text = IntroText01;
     }
 
     // Update is called once per frame

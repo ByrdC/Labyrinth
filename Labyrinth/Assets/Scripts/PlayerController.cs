@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 4.0f;
-
+    public GameObject Theseus;
     private Vector2 direction = Vector2.zero;
 
 
@@ -55,12 +55,12 @@ public class PlayerController : MonoBehaviour
     {
         if (direction == Vector2.left)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            Theseus.transform.localScale = new Vector3(-1, 1, 1);
         }
 
         else if (direction == Vector2.right)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            Theseus.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 }
