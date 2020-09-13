@@ -1842,7 +1842,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Theseus and the Labyrinth is a student made video game inspired by the
     Cretan Myth of the same name. This project was made in collaboration with Drexel
-    University, under the research guidence of Dr. Maria Chanaraki and Dr. Glen Muschio,
+    University, under the research guidence of Dr. Maria Hnaraki and Dr. Glen Muschio,
     as part of the University's co-op program.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 261.9229}
   m_textInfo:
     textComponent: {fileID: 2053812941}
-    characterCount: 279
+    characterCount: 277
     spriteCount: 0
     spaceCount: 46
     wordCount: 47
